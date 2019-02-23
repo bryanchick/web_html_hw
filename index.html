@@ -76,25 +76,25 @@
                         <section id="summary">
                             <p>This project utilizes Python, API’s, and JSON to try and answer a fundamental question:
                                 “What’s the weather like as we get closer to the equator?”
+                                <a href="https://github.com/bryanchick/WeatherPy" target="_blank"">Click here to see the Weather Project.</a>
                             </p>
 
-                            <p> Assigning 1,500 random Latitude and Longitudes, I utilized the Python CitiPy library to find
-                                the city closest to the Lat/Lon (dropping all duplicates) to get a listing of over 600 cities.
+                            <p> I randomly assigned 1,500 Latitude and Longitudes, then used the Python CitiPy library to find
+                                the city closest to the Lat/Lon (dropping all duplicates) to get a listing of 606 cities.
                                 I utilized OpenWeatherMapAPI to get the weather for the cities (dropping cities with no data)
                                 to create a dataframe of weather information for over 500 cities.
                             </p>
 
                             <p>
-                                The data is saved to CSV and the data is analyzed across the three climate zones (Tropical Zone, Temperate Zone, and
-                                Polar Zone). To showcase the relationship between latitude and temperature/humidity/cloudiness/wind
-                                speed I utilize MatplotLib scatter plots to view:
+                                The data is saved to CSV and the data is analyzed to showcase the relationship between latitude and temperature/humidity/cloudiness/wind
+                                speed. I then used MatplotLib scatter plots to view:
                             </p>
 
                             <ul>
-                                <li>Temperature (F) vs. Latitude</li>
-                                <li>Humidity (%) vs. Latitude</li>
-                                <li>Cloudiness (%) vs. Latitude</li>
-                                <li>Wind Speed (mph) vs. Latitude</li>
+                                <li>Latitude vs. Temperature (F)</li>
+                                <li>Latitude vs. Humidity (%)</li>
+                                <li>Latitude vs. Cloudiness (%)</li>
+                                <li>Latitude vs. Wind Speed (mph)</li>
 
                             </ul>
 
