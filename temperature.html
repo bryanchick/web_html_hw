@@ -1,28 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Temperature</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  </head>
-  <body>
-      <p>Tote bag subway tile cliche vexillologist plaid williamsburg, kogi tofu tattooed succulents.
-           Pork belly venmo XOXO authentic. Single-origin coffee fingerstache banh mi master 
-           cleanse listicle forage meditation. Hammock chicharrones ugh, ennui authentic copper 
-           mug tattooed. Church-key banjo copper mug art party distillery hell of unicorn pickled. 
-           Tacos tofu heirloom, YOLO iPhone 90's hell of DIY.
-<br>
-            Oh. You need a little dummy text for your mockup? How quaint.
-            <br>
-            I bet you’re still using Bootstrap too…</p>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latitude vs. Temperature</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">City Latitude vs. Temperature</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Plots
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="temperature.html">Temperature</a>
+                            </li>
+                            <li>
+                                <a href="humidity.html">Humidity</a>
+                            </li>
+                            <li>
+                                <a href="cloudiness.html">Cloudiness</a>
+                            </li>
+                            <li>
+                                <a href="wind.html">Wind Speed</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comparison.html">Comparison</a>
+                    </li>
+                    <li>
+                        <a href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <div class="container">
+        <div class="row row-grid">
+            <div class="col-md-6">
+                <div class="box box-left">
+                    <section id="intro">
+                        <h1>City Latitude vs. Temperature</h1>
+                        <hr>
+                        <figure>
+                            <a target="_blank" href="Latitude_Vs_Temperature.png">
+                                <img id="viz-main" src="Latitude_Vs_Temperature.png"
+                                    alt="Latitude of cities V.s Temperature">
+                            </a>
+                        </figure>
+
+                        <section id="summary">
+                            <p><br><br>As we can suspect, the latitude does have a 
+                                connection with temperature.  Right now, it is winter in the 
+                                northern hemisphere and summer in the southern hemisphere. As you 
+                                can see frim this chart, south of the equator has a higher temperature.  
+
+                            </p>
+
+
+                        </section>
+
+                    </section>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="box box-right">
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="temperature.html">
+                                    <img id="landing-viz" src="Latitude_Vs_Temperature.png"
+                                        alt="Latitude vs. Temperature">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="humidity.html">
+                                    <img id="landing-viz" src="Latitude_Vs_Humidity.png" alt="Latitude vs. Humidity">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="cloudiness.html">
+                                    <img id="landing-viz" src="Latitude_Vs_Cloudiness.png"
+                                        alt="Latitude vs. Cloudiness">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="wind.html">
+                                    <img id="landing-viz" src="Latitude_Vs_Wind_Speed.png"
+                                        alt="Latitude vs. Wind Speed">
+                                </a>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+
+</body>
+
 </html>
+
